@@ -1,0 +1,25 @@
+{
+    "name": "me-globe-graphql-server",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "start:dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server": "^2.12.0",
+        "crypto-js": "^4.0.0",
+        "dotenv": "^8.2.0",
+        "graphql": "^15.0.0",
+        "moment": "^2.24.0",
+        "node-fetch": "^2.6.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
+}
