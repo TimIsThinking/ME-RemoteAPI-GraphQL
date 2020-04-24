@@ -1,16 +1,18 @@
 const { gql } = require('apollo-server');
+const remoteAPI = require('./RemoteAPI/remoteAPI_schema');
 
-module.exports = gql`
-  type Claim {
-    AreaId: String
-    Location: String
-    Name: String
-    OwnerId: String
-    OwnerName: String
-    TimeRemaining: String
-  }
+const linkSchema = gql`
+    type Query {
+        _: Boolean
+    }
 
-  type Query {
-    claims: [Claim]
-  }
+    type Mutation {
+        _: Boolean
+    }
+
+    type Subscription {
+        _: Boolean
+    }
 `;
+
+module.exports = [linkSchema, remoteAPI];
